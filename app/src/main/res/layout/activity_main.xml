@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_color"
+        tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifImageView android:id="@+id/burgerGif"
+            android:src="@drawable/gif_burger"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_above="@id/eatWhat"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+    <ImageView android:id="@+id/imvChickenFood"
+               android:layout_width="310dp"
+               android:layout_height="250dp"
+               android:layout_above="@id/eatWhat"
+               android:layout_centerHorizontal="true"/>
+
+    <TextView android:id="@+id/eatWhat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EAT WHAT?"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+
+    <Button android:id="@+id/randomBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="50dp"
+            android:text="RANDOM"
+            android:textSize="16sp"
+            android:textColor="@drawable/btn_text_color"
+            android:background="@drawable/bg_button"
+            android:layout_below="@id/eatWhat"
+            android:layout_centerHorizontal="true"/>
+
+    <Button android:id="@+id/nextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:text="NEXT >"
+            android:textSize="16sp"
+            android:textColor="@drawable/btn_text_color"
+            android:background="@drawable/bg_button"
+            android:layout_below="@id/randomBtn"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+</RelativeLayout>
